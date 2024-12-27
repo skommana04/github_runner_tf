@@ -11,6 +11,7 @@ resource "aws_instance" "server1" {
   key_name      = var.key_name
 
   subnet_id = var.subnet_id
+  associate_public_ip_address = true 
 
   tags = {
     Name = var.name
