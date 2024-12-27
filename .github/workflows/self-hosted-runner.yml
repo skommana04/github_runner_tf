@@ -80,6 +80,10 @@ jobs:
     - name: Terraform Init
       run: terraform init
 
+    # Formats all Terraform configuration files
+    - name: Terraform Auto Format
+      run: terraform fmt 
+
     # Checks that all Terraform configuration files adhere to a canonical format
     - name: Terraform Format
       run: terraform fmt -check
