@@ -10,6 +10,8 @@ resource "aws_instance" "server1" {
   ami           = var.ami
   key_name      = var.key_name
 
+  subnet_id = var.subnet_id
+
   tags = {
     Name = var.name
   }
