@@ -6,7 +6,7 @@ provider "aws" {
 
 resource "aws_instance" "server1" {
 
-  instance_type = var.instance.type
+  instance_type = var.instance_type
   ami           = var.ami
   key_name      = var.key_name
 
